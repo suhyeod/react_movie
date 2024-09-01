@@ -8,33 +8,52 @@
 
 header {
   width: 100%;
-  height: 100vh;
-}
-nav{
-  position: sticky;
+  position: fixed;
   top: 0;
 }
+
+
 .naviba {
-  display: flex;
+  position: fixed;
   background-color: white;
-  justify-content: space-around;
   font-size: 16px;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: auto;
-  padding: 12px;
-  border-radius: 0px 0px 10px 10px;
+  line-height: 150px;
+  width: 100px;
+  text-align: center;
+
 }
 
+.naviba li {
+  transition: 0.6s;
+
+}
+
+.naviba a:hover{
+  background-color: black;
+  transition: 0.3s;
+  padding: 10px;
+  border-radius: 40%;
+  color: white;
+}
+
+.naviba:hover > :not(:hover){
+  font-size: 10px;
+  opacity: 0.2;
+}
 
 .top {
-  width: 80%;
-  margin: auto;
   display: flex;
   align-items: center;
   padding: 16px 0px;
   background-color: white;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -46%;
+  
 }
+
 .top > li {
   flex-grow: 1;
   width: 100%;
@@ -51,8 +70,51 @@ nav{
   margin-left: 40px;
 }
 
+#container_1 {
+  height: 90.6vh;
+  background-color: aqua;
+  width: 80%;
+  margin: auto;
+  font-size: 20px;
+  position: relative;
+}
 
-section {
-  height: 100vh;
-  width: 100%;
+#container_1 ul {
+  margin-top: 6%;
+}
+#container_1 > ul > li:first-child {
+  overflow: hidden;
+}
+#container_1 img {
+  width: 350px;
+  height: 450px;
+  border-radius: 5%;
+}
+.movie_img {
+  position: absolute;
+  left: 50%;
+}
+
+.movie_img li {
+  position: absolute;
+  transform: translate(-50%, 0%);
+}
+.text_box{
+  background-color: black;
+  width: 350px;
+  height: 450px;
+  opacity: 0;
+  cursor: pointer;
+  border-radius: 5%;
+  align-content: center;
+  text-align: center;
+}
+
+.text_box:hover {
+  opacity: 1;
+  transition: 0.4s;
+}
+.movie_img p {
+    font-size: 30px;
+    color: white;
 }
