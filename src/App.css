@@ -85,14 +85,14 @@ header {
 #container_1 > ul > li:first-child {
   overflow: hidden;
 }
-#container_1 img {
+.movie_img > li > div > ul:first-child img {
   width: 350px;
   height: 450px;
   border-radius: 5%;
 }
 .movie_img {
   position: absolute;
-  left: 50%;
+  left: 25%;
 }
 
 .movie_img li {
@@ -113,8 +113,34 @@ header {
 .text_box:hover {
   opacity: 1;
   transition: 0.4s;
+  opacity: 0.7;
 }
 .movie_img p {
     font-size: 30px;
     color: white;
+}
+
+.icon {
+  position: relative;
+  z-index: 999;
+}
+
+.icon li:nth-child(1) img {
+  position: absolute;
+  width: 40px;
+  top: 198px;
+  left: 180px;
+  filter: opacity(0.5) drop-shadow(0 0 0 #000000);
+}
+.icon li:nth-child(2) img {
+  position: absolute;
+  width: 40px;
+  top: 198px;
+  right: 180px;
+  filter: opacity(0.5) drop-shadow(0 0 0 #000000);
+}
+
+.icon img:hover{
+  border-radius: 30px;
+  background-color: black;
 }
